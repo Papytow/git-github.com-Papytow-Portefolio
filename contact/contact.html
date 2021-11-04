@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/contact/styleContact.css">
+
+</head>
+
+
+<!-- Navbar  -->
+<body>
+  <nav class="navbar dark-mode" role="navigation">
+    <div class="navbar__logo"><img src="https://i.ibb.co/Wf7x5qk/profile.jpg" alt="profile photo">Charle Cantin</div>    
+    <ul class="navbar__links">
+      <li class="navbar__link first"><a href="/index.html">Accueil</a></li>
+      <li class="navbar__link second"><a href="/galerie/galerie.html">Galerie</a></li>
+      <li class="navbar__link third"><a href="/tarif/tarif.html"> Prestation</a></li>
+      <li class="navbar__link four"><a href="/contact/contact.html">Contact</a></li>
+      
+    </ul>   
+    <button class="burger">
+      <span class="bar"></span>  
+    </button>   
+  </nav>
+  <!-- contenu du formulaire de contact  -->
+    <h1>Formulaire de contact</h1>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+
+      <!-- Footer -->
+
+      <footer>
+         <div class="colonne">
+             <h3>Mes services</h3>
+             <p>Développement de projet IA</p>
+             <p>Prestation en IA</p>
+             <p>Investissement en entreprises IA</p>
+         </div>
+         <div class="colonne">
+             <h3>Mon entreprise</h3>
+             <p>Équipe constituée de 20k ingénieurs</p>
+             <p>Une communauté active mondiale</p>
+             <p>Une entreprise à but lucratif</p>
+         </div>
+         <div class="colonne">
+             <h3>Mes adresses</h3>
+             <p>artificial@gmail.com</p>
+             <p>intelligence@gmail.com</p>
+             <p>google-science@google.com</p>
+         </div>
+     </footer>  
+     
+</body>
+</html>
